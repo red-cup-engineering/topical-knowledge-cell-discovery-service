@@ -1,0 +1,20 @@
+{
+  "name": "Topical Knowledge Cell Discovery Service",
+  "description": "Forms freshness snapshots over a finite customer-supplied denominator of signed topical-cell endpoints without a central registry or Union-wide completeness claim.",
+  "supportedInterfaces": [
+    { "url": "${BASE_URL}/a2a/jsonrpc", "protocolBinding": "JSONRPC", "tenant": "", "protocolVersion": "1.0" },
+    { "url": "${BASE_URL}/a2a/rest", "protocolBinding": "HTTP+JSON", "tenant": "", "protocolVersion": "1.0" }
+  ],
+  "provider": { "url": "https://emsenn.net/", "organization": "Topical Knowledge Cell Discovery Service" },
+  "version": "0.1.0",
+  "capabilities": { "streaming": false, "pushNotifications": false, "extensions": [], "extendedAgentCard": false },
+  "securitySchemes": {}, "securityRequirements": [],
+  "defaultInputModes": ["application/rmn+cbor"], "defaultOutputModes": ["application/rmn+cbor"],
+  "skills": [{
+    "id": "discover-topical-knowledge-cells", "name": "Discover topical knowledge cells",
+    "description": "Observes one exact finite endpoint set and returns fresh, stale, refused, and contradictory evidence without selecting a central truth.",
+    "tags": ["discovery", "freshness", "federation"], "examples": [],
+    "inputModes": ["application/rmn+cbor"], "outputModes": ["application/rmn+cbor"], "securityRequirements": []
+  }],
+  "signatures": []
+}
