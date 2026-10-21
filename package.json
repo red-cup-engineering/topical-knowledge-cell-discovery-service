@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Forms denominator-bounded freshness snapshots over signed topical knowledge-cell manifests without a central registry.",
   "type": "module",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "files": [
     "scripts",
     "content",
@@ -40,5 +40,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/topical-knowledge-cell-discovery-service.git"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
