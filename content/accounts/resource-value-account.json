@@ -1,0 +1,19 @@
+{
+  "id": "urn:account:topical-knowledge-cell-discovery-service:resource-value",
+  "type": "ResourceValueAccount",
+  "owner": "urn:ame:topical-knowledge-cell-discovery-service",
+  "inputs": { "signedDiscoveryCalls": "measured-per-endpoint", "rmnIdentityCalls": "unknown-not-zero", "witnessJournalRdfDurability": "unknown-not-zero", "storage": "unknown-not-zero" },
+  "offeredRevenue": {
+    "assetId": "eip155:8453/erc20:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "amountAtomicPerEndpoint": "10000",
+    "basis": "each endpoint observed"
+  },
+  "localDevelopmentAccount": {
+    "account": "eip155:31337:0xdfbd740842a937f8ea79b5ce216680e6208c56d3",
+    "binding": "../evm/accounts/eip155-31337.json",
+    "receivesRealUSDC": false
+  },
+  "settlementAccount": null,
+  "revenueRecognized": "only from exact settlement evidence or an accepted internal consideration receipt",
+  "zeroInferredFromUnknown": false
+}

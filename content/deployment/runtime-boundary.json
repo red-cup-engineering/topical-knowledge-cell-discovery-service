@@ -1,0 +1,14 @@
+{
+  "id": "urn:deployment-boundary:topical-knowledge-cell-discovery-service:v1",
+  "type": "DeploymentBoundary",
+  "version": 1,
+  "status": "not-activated",
+  "runtimeAdapterModule": null,
+  "requiredProviders": ["signed-a2a-agent-card-discovery-service", "signed-rmn-semantic-conformance-service", "signed-witness-journal-rdf-projection-service"],
+  "writableRoots": ["data/"],
+  "ambientFilesystemRead": false,
+  "globalRegistryRead": false,
+  "googleAccess": false,
+  "port": 19839,
+  "activationStatus": "receiver-port-and-signed-provider-bindings-required"
+}

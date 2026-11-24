@@ -1,0 +1,19 @@
+[Unit]
+Description=Bare Cedar Fog Topical Knowledge Cell Discovery Service A2A boundary
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/emsenn/info/lib/emsenn/services/561-group/services/red-cup-engineering/services/software-services-section/services/topical-knowledge-cell-discovery-service
+ExecStart=/home/emsenn/.config/nvm/versions/node/v24.13.1/bin/node bin/server.mjs
+Environment=HOST=127.0.0.1
+Environment=PORT=19839
+Environment=BASE_URL=http://127.0.0.1:19839
+Environment=AGENT_CARD_SIGNING_KEY=/home/emsenn/info/lib/emsenn/services/561-group/services/red-cup-engineering/services/software-services-section/services/topical-knowledge-cell-discovery-service/data/credentials/agent-card.pkcs8.pem
+Environment=AGENT_CARD_JWKS=/home/emsenn/info/lib/emsenn/services/561-group/services/red-cup-engineering/services/software-services-section/services/topical-knowledge-cell-discovery-service/content/agent-cards/topical-knowledge-cell-discovery-service-jwks.json
+Environment=AGENT_CARD_SIGNING_KID=topical-knowledge-cell-discovery-service-ed25519
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target

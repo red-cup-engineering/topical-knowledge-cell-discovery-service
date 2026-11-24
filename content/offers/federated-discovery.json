@@ -1,0 +1,18 @@
+{
+  "id": "urn:offer:topical-knowledge-cell-federated-discovery:v1",
+  "type": "ServiceOffer",
+  "provider": "urn:ame:topical-knowledge-cell-discovery-service",
+  "operation": "discover-topical-knowledge-cells",
+  "price": {
+    "assetId": "eip155:8453/erc20:0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "symbol": "USDC",
+    "decimals": 6,
+    "amountAtomicPerEndpoint": "10000",
+    "minimumAmountAtomic": "10000",
+    "basis": "each endpoint in the customer-supplied denominator",
+    "payoutAccount": "runtime-authorized"
+  },
+  "denominator": "customer-supplied-endpoints-only",
+  "completenessClaim": "none-beyond-denominator",
+  "customerNeverReceives": ["notebook-creation", "corpus-mutation", "sharing", "deletion", "publication", "report-generation", "payment-settlement"]
+}
